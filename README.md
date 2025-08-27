@@ -1,4 +1,4 @@
-1.‐ ¡Bienvenido al Manual de Buenas Prácticas ABAP IMEGA VENTUS!
+## 1.‐ ¡Bienvenido al Manual de Buenas Prácticas ABAP IMEGA VENTUS!
 
 ¡Bienvenido al Manual de Buenas Prácticas en ABAP! Este documento ha sido creado con el propósito de proporcionar una guía clara y estructurada para desarrollar aplicaciones y programas en ABAP de manera eficiente, segura y estandarizada.
 
@@ -12,7 +12,7 @@ Te invitamos a que consultes este manual en cada etapa de tu desarrollo, y esper
 
 ¡Gracias por tu dedicación al aprendizaje y la mejora continua!
 
-2.‐ Estructura de Código
+## 2.‐ Estructura de Código
 
 ## Comentarios: 
 Asegúrate de comentar el código donde sea necesario para que otros programadores puedan entenderlo fácilmente. Usa comentarios para describir la funcionalidad de bloques de código complejos o algoritmos importantes.
@@ -32,7 +32,7 @@ Usa nombres descriptivos que representen el contenido o la funcionalidad. Evita 
 ## Funciones y métodos: 
 Usa verbos para describir la acción (get_, set_, calculate_).
 
-3.‐ Selección de Datos
+## 3.‐ Selección de Datos
 
 ## Evita el uso de __SELECT *__ : 
 Especifica las columnas que realmente necesitas, ya que __SELECT *__ puede afectar el rendimiento al extraer datos innecesarios.
@@ -81,7 +81,7 @@ Siempre verifica si las consultas devuelven resultados válidos antes de seguir 
 > __ENDIF__.
 
 
-4.‐ Declaración de Variables
+## 4.‐ Declaración de Variables
 
 ## Declaración local: 
 Siempre que sea posible, declara variables dentro de la función o el método donde se van a usar. Evita declarar variables globales innecesarias.
@@ -120,7 +120,7 @@ Declara las variables solo en el lugar donde se necesiten. Mantener las variable
 Nunca declares variables que no vas a utilizar. La presencia de variables no utilizadas en el código complica la legibilidad y puede generar confusión.
 
 
-5.‐ Performance de Código
+## 5.‐ Performance de Código
 
 ## Modularización del Código:
 Uso de funciones y métodos: Divide el código en bloques funcionales pequeños utilizando subrutinas (FORM), funciones (FUNCTION MODULES) y métodos (en clases ABAP). Esto permite una mejor organización, reutilización y mantenimiento del código.
@@ -276,7 +276,7 @@ ENDFORM.
 ~~~
 
 
-6. Auditoría de Código ABAP
+## 6. Auditoría de Código ABAP
 
    Para garantizar la calidad del código ABAP, SAP proporciona varias transacciones que permiten auditar el código en busca de errores, malas prácticas, problemas de rendimiento y violaciones de los estándares de desarrollo. Estas herramientas son fundamentales para asegurar que el código sea mantenible, eficiente y cumpla con las normativas de seguridad.
 
