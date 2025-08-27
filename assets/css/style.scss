@@ -1,0 +1,19 @@
+// Añadir estilos personalizados para notas
+.note {
+  border-left: 4px solid #1e6bb8;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  background-color: #f5f5f5;
+}
+
+.note-important {
+  border-left-color: #c71e1e;
+}
+
+.note-tip {
+  border-left-color: #1ec736;
+}
+
+.note-warning {
+  border-left-color: #e6b400;
+}
