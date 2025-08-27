@@ -1,1 +1,8 @@
+```yaml
+title: "Manual de Buenas Prácticas ABAP"
+description: "Guía clara y estructurada para el desarrollo en ABAP de manera eficiente, segura y estandarizada."
 theme: jekyll-theme-cayman
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
