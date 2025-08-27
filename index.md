@@ -40,31 +40,22 @@ Especifica las columnas que realmente necesitas, ya que __SELECT *__ puede afect
 ## Evitar el uso de __FOR ALL ENTRIES__: 
 Esta sentencia puede causar duplicados si la tabla interna que se utiliza está vacía o si no se ha validado adecuadamente. En lugar de esto, usa otras alternativas como JOINS o subconsultas que sean más eficientes y seguras.
 
-
-TEST
-
-> **Advertencia:** Nunca uses SELECT * en producción sin una cláusula WHERE adecuada
-> para evitar cargar toda la tabla de base de datos.
-{: .note .note-warning}
-
-
-TEST
-
-> [!IMPORTANT]
+> **Advertencia:** 
 > " Evitar __FOR ALL ENTRIES__: \
 > __SELECT__ vbeln erdat \
 >   __FROM__ vbak  \
 >   __INTO TABLE__ lt_vbak \
 >   __FOR ALL ENTRIES IN__ lt_kunnr 
 >   __WHERE__ kunnr __EQ__ 'TEST'. 
->
-> " Alternativa usando __INNER JOIN__: \
+{: .note .note-warning}
+
+> **Advertencia:** 
 > __SELECT__ a.vbeln a.erdat \
 >  __INTO TABLE__ lt_vbak \
 >  __FROM__ vbak as a\
 >  __INNER JOIN__ kna1 as b __ON__ a.kunnr = b.kunnr \
 >  __WHERE__ b.kunnr __EQ__ 'TEST'. 
->
+{: .note .note-warning}
 
 ## No utilizar INTO CORRESPONDING FIELDS:
 
