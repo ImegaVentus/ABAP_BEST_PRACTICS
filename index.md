@@ -40,16 +40,16 @@ Especifica las columnas que realmente necesitas, ya que __SELECT *__ puede afect
 ## Evitar el uso de __FOR ALL ENTRIES__: 
 Esta sentencia puede causar duplicados si la tabla interna que se utiliza está vacía o si no se ha validado adecuadamente. En lugar de esto, usa otras alternativas como JOINS o subconsultas que sean más eficientes y seguras.
 
-> **Advertencia:** 
+> **Mala Practica:** 
 > " Evitar __FOR ALL ENTRIES__: \
 > __SELECT__ vbeln erdat \
 >   __FROM__ vbak  \
 >   __INTO TABLE__ lt_vbak \
 >   __FOR ALL ENTRIES IN__ lt_kunnr 
 >   __WHERE__ kunnr __EQ__ 'TEST'. 
-{: .note .note-warning}
+{: .note .note-important}
 
-> **Advertencia:** 
+> **Corrección:** 
 > __SELECT__ a.vbeln a.erdat \
 >  __INTO TABLE__ lt_vbak \
 >  __FROM__ vbak as a\
