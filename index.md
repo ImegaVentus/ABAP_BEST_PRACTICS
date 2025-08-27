@@ -39,6 +39,12 @@ Especifica las columnas que realmente necesitas, ya que __SELECT *__ puede afect
 
 ## Evitar el uso de __FOR ALL ENTRIES__: 
 Esta sentencia puede causar duplicados si la tabla interna que se utiliza está vacía o si no se ha validado adecuadamente. En lugar de esto, usa otras alternativas como JOINS o subconsultas que sean más eficientes y seguras.
+
+> **Advertencia:** Nunca uses SELECT * en producción sin una cláusula WHERE adecuada
+> para evitar cargar toda la tabla de base de datos.
+{: .note .note-warning}
+
+
 > [!IMPORTANT]
 > " Evitar __FOR ALL ENTRIES__: \
 > __SELECT__ vbeln erdat \
