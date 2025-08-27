@@ -42,9 +42,12 @@ Esta sentencia puede causar duplicados si la tabla interna que se utiliza está 
 
 
 TEST
+
 > **Advertencia:** Nunca uses SELECT * en producción sin una cláusula WHERE adecuada
 > para evitar cargar toda la tabla de base de datos.
 {: .note .note-warning}
+
+
 TEST
 
 > [!IMPORTANT]
