@@ -5,3 +5,6 @@ theme: jekyll-theme-cayman
 # Markdown settings
 markdown: kramdown
 highlighter: rouge
+
+include:
+  - _includes/head-custom.html
